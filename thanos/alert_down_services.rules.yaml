@@ -19,6 +19,6 @@ groups:
             cluster="seattle", instance=~".*:9090"}) by (job, cluster) == 2),
             "cluster", "seattle", "",""
           )
-        for: 15s  # for demo purposes
+        for: 1m  # for demo purposes
         labels:
           severity: critical
